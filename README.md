@@ -1,8 +1,8 @@
-<img src="Whitedevil.gif"><br>
+<img src=""><br>
 - 👋 Hi, I’m @WhiteDevil1097
 - 👀 I’m interested in
 - Hacking-Programing,codeing ...
-<img src="Whitedevil.gif"><br>
+<img src=""><br>
 - 🌱 I’m currently learning
 - Python Language ...
 <img src="Whitedevil2.gif"><br>
