@@ -1,0 +1,81 @@
+<html>
+  <head>
+    <title>Love Hub</title>
+    <style>
+      body {
+        background-color: #FF0000; /* Red color */
+      }
+      .post-section {
+        width: 80%;
+        margin: 40px auto;
+        padding: 20px;
+        background-color: #FFFFFF; /* White color */
+        border: 1px solid #CCCCCC; /* Gray color */
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .post-input {
+        width: 100%;
+        height: 100px;
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #CCCCCC; /* Gray color */
+        border-radius: 10px;
+      }
+      .post-btn {
+        background-color: #FF0000; /* Red color */
+        color: #FFFFFF; /* White color */
+        padding: 10px 20px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+      .post-btn:hover {
+        background-color: #CC0000; /* Dark red color */
+      }
+      .popup-msg {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #FFFFFF; /* White color */
+        padding: 20px;
+        border: 1px solid #CCCCCC; /* Gray color */
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        display: none;
+      }
+      .popup-msg.show {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="post-section">
+      <h2>Post Your Message</h2>
+      <textarea class="post-input" placeholder="Type your message here..."></textarea>
+      <button class="post-btn" onclick="showPopup()">Post</button>
+    </div>
+    <div class="popup-msg">
+      <h2>You Have Been Hacked!</h2>
+      <p>This is an animated pop-up message!</p>
+      <button class="post-btn" onclick="closePopup()">Close</button>
+    </div>
+    <script>
+      function showPopup() {
+        document.querySelector('.popup-msg').classList.add('show');
+        animatePopup();
+      }
+      function closePopup() {
+        document.querySelector('.popup-msg').classList.remove('show');
+      }
+      function animatePopup() {
+        var popup = document.querySelector('.popup-msg');
+        popup.style.transform = 'scale(0)';
+        setTimeout(function() {
+          popup.style.transform = 'scale(1)';
+        }, 100);
+      }
+    </script>
+  </body>
+</html>
